@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/homestyle.css">
+
+    <title>Sistema Financeiro</title>
+</head>
+
+<body>
+    <section>
+        <h1>Sistema Financeiro</h1>
+        <form id="form_transacao">
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" name="valor" placeholder="Informe o Valor R$" required>
+
+            <label for="tipo">Tipo:</label>
+
+            <select id="tipo" name="tipo" required>
+                <option value="receita">receita</option>
+                <option value="despesa">despesa</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+
+            <p id="mensagem"></p>
+        </form>
+
+        <div class="container">
+            <div class="bot">
+                <button id="exibir_transacoes">Exibir transações</button>
+                <button id="limpar_transacoes">Limpar</button>
+            </div>
+
+            <p id="saldo"></p>
+
+            <div class="cadeia">
+                <a href="http://localhost:3001/home" target="_blank">Acessar BlockChain</a>
+            </div>
+        </div>
+
+        <textarea name="transacoes" id="transacoes" placeholder="transações" disabled></textarea>
+    </section>
+    <script src="../scripts/homescript.js"></script>
+</body>
+
+</html>
